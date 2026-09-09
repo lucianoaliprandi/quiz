@@ -420,6 +420,22 @@
   .results-actions{ display:flex; gap:10px; justify-content:center; flex-wrap:wrap; }
 
   [hidden]{ display:none !important; }
+
+  .qr-top{
+  display:flex; justify-content:center; margin:0 0 18px;
+}
+.qr-top .qr-box{
+  display:flex; flex-direction:column; align-items:center; gap:6px;
+  background:#fff; border:1px solid var(--border); border-radius:14px;
+  padding:12px 12px 10px; box-shadow:var(--shadow);
+}
+.qr-top img{
+  display:block; width:132px; height:132px; border-radius:6px;
+}
+.qr-top .qr-label{
+  font-family:"IBM Plex Mono", monospace; font-size:10.5px; color:#54627C;
+  letter-spacing:.02em;
+}
 </style>
 </head>
 <body>
@@ -456,6 +472,13 @@
 </svg>
 
 <div class="wrap">
+  <div class="qr-top">
+    <div class="qr-box">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAA...(base64 completo da imagem)...AASUVORK5CYII=" alt="QR Code" width="1000" height="1000">
+      <span class="qr-label">Escaneie para acessar</span>
+    </div>
+  </div>
+  
   <header class="top">
     <div class="brand">
       <span class="dot"></span>
